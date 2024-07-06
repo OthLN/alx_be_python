@@ -1,7 +1,7 @@
 def main():
     task = input("Enter the task description: ")
 
-    priority = input("Enter the priority level (high, medium, low): ").strip().lower()
+    priority = input("Priority (high/medium/low): ").strip().lower()
 
     time_bound = input("Is the task time-bound? (yes/no): ").strip().lower()
 
