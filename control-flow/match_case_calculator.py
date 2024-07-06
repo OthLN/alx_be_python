@@ -1,29 +1,28 @@
 def main():
-    try:
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        operation = input("Choose the operation (+, -, *, /): ")
-        result = match_case_calculate(num1, num2, operation)
-        print(f"Result: {result:.2f}")
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Choose the operation (+, -, *, /): ").strip()
 
-    except ValueError:
-        print("Invalid input. Please enter valid numeric values.")
+    print("\nCalculating...")
 
-def match_case_calculate(num1, num2, operation):
     match operation:
-        case "+":
-            return num1 + num2
-        case "-":
-            return num1 - num2
-        case "*":
-            return num1 * num2
-        case "/":
+        case '+':
+            result = num1 + num2
+            print(f"The result of {num1} + {num2} is {result}.")
+        case '-':
+            result = num1 - num2
+            print(f"The result of {num1} - {num2} is {result}.")
+        case '*':
+            result = num1 * num2
+            print(f"The result of {num1} * {num2} is {result}.")
+        case '/':
             if num2 != 0:
-                return num1 / num2
+                result = num1 / num2
+                print(f"The result of {num1} / {num2} is {result}.")
             else:
-                return "Error: Division by zero"
+                print("Error: Division by zero is not allowed.")
         case _:
-            return "Invalid operation"
+            print("Invalid operation selected. Please choose from +, -, *, /.")
 
 if __name__ == "__main__":
     main()
