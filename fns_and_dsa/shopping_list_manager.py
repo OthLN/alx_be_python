@@ -19,10 +19,10 @@ def view_list():
 
 def display_menu():
     print("Shopping List Manager")
-    print("1. Add an item")
-    print("2. Remove an item")
-    print("3. View the list")
-    print("4. Exit")
+    print(f"1. Add Item")
+    print(f"2. Remove Item")
+    print(f"3. View List")
+    print(f"4. Exit")
     choice = input("Enter your choice (1/2/3/4): ").strip()
     return choice
 
