@@ -8,17 +8,17 @@ def main():
     match operation:
         case '+':
             result = num1 + num2
-            print(f"The result of {num1} + {num2} is {result}.")
+            print(f"The result is {num1} + {num2} = {result}.")
         case '-':
             result = num1 - num2
-            print(f"The result of {num1} - {num2} is {result}.")
+            print(f"The result is {num1} - {num2} = {result}.")
         case '*':
             result = num1 * num2
-            print(f"The result of {num1} * {num2} is {result}.")
+            print(f"The result is {num1} * {num2} = {result}.")
         case '/':
             if num2 != 0:
                 result = num1 / num2
-                print(f"The result of {num1} / {num2} is {result}.")
+                print(f"The result is {num1} / {num2} = {result}.")
             else:
                 print("Error: Division by zero is not allowed.")
         case _:
