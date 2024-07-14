@@ -19,4 +19,4 @@ if __name__ == "__main__":
     denominator = sys.argv[2]
 
     result = safe_divide(numerator, denominator)
-    print(result)
+    print(f"The result of the division is {result:.1f}")
