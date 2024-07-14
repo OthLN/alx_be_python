@@ -25,4 +25,4 @@ if __name__ == "__main__":
     else:
         formatted_result = result
 
-    print(f"The result of the division is {formatted_result}")
+    print(formatted_result)  # Print the result without any additional text
